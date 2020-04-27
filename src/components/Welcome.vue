@@ -12,7 +12,7 @@
           <hr class="one-eight-seven-bar"/>
           <SocialButton platform="linkedin" url="https://www.linkedin.com/in/philippschemel/" />
           <SocialButton platform="github" url="https://github.com/schempil" />
-          <SocialButton platform="instagram" url="https://www.instagram.com/swindle1995/" />
+          <SocialButton platform="instagram" url="https://www.instagram.com/swindle1995/" color="google"/>
         </div>
       </div>
     </section>

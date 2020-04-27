@@ -1,6 +1,6 @@
 <template>
-    <a target="_blank" :href="url" :class="'button is-medium is-' + platform">
-        <b-icon :icon="icon || platform" size="is-medium" />
+    <a target="_blank" :href="url" :class="'button is-medium is-' + (color || platform)">
+        <b-icon :icon="platform" size="is-medium" />
     </a>
 </template>
 
@@ -9,7 +9,7 @@
         name: 'SocialButton',
         props: {
             platform: String,
-            icon: String,
+            color: String,
             url: String
         }
     }
