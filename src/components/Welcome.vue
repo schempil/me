@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="overflow: hidden">
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
