@@ -1,6 +1,6 @@
 <template>
   <div style="overflow: hidden">
-    <section class="hero is-fullheight">
+    <section class="hero is-medium">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
