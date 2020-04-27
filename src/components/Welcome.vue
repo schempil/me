@@ -1,32 +1,40 @@
 <template>
-  <div class="hello">
-    <h1>{{ name }}</h1>
-    <p>Web Development</p>
+  <div>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            {{ name }}
+          </h1>
+          <h2 class="subtitle">
+            Web Development
+          </h2>
+          <hr class="one-eight-seven-bar"/>
+          <SocialButton platform="linkedin" url="https://www.linkedin.com/in/philippschemel/" />
+          <SocialButton platform="github" url="https://github.com/schempil" />
+          <SocialButton platform="instagram" url="https://www.instagram.com/swindle1995/" />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
+  import SocialButton from "./SocialButton";
+
   export default {
     name: 'Welcome',
+    components: {SocialButton},
     props: {
       name: String
     }
   }
 </script>
 
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style>
+  .one-eight-seven-bar {
+    width: 187px;
+    text-align: center;
+    margin: 1.5rem auto;
+  }
 </style>
