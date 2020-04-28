@@ -7,7 +7,7 @@
             {{ name }}
           </h1>
           <h2 class="subtitle">
-            Web Development
+            Developer
           </h2>
           <hr class="one-eight-seven-bar"/>
           <SocialButton platform="linkedin" url="https://www.linkedin.com/in/philippschemel/" />
