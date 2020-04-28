@@ -1,20 +1,15 @@
 <template>
   <div id="app">
-    <Welcome name="Philipp Schemel"/>
+    <router-link to="/">Welcome</router-link>
+    <router-link to="/portfolio">Portfolio</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Welcome from './components/Welcome.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Welcome
-  }
-}
+  export default { name: 'App' }
 </script>
 
-<style lang="scss">
+<style>
 
 </style>
