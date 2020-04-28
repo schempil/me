@@ -10,7 +10,7 @@ const routes = [
   { path: '/portfolio', component: Welcome, props: { name: 'Portfolio'}}
 ]
 
-const router = new VueRouter({ routes: routes, mode: 'history' })
+const router = new VueRouter({ routes, mode: 'history' })
 
 Vue.config.productionTip = false
 
