@@ -16,7 +16,5 @@
 </script>
 
 <style>
-    a {
-        margin-right: 4px;
-    }
+    a { margin-right: 4px; }
 </style>
