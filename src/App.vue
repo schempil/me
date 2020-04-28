@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <router-link to="/">Welcome</router-link>
-    <router-link to="/portfolio">Portfolio</router-link>
+    <NavigationBar />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-  export default { name: 'App' }
+  import NavigationBar from "./components/NavigationBar";
+
+  export default { name: 'App',
+    components: {NavigationBar}
+  }
 </script>
 
 <style>
