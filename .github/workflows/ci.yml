@@ -1,15 +1,12 @@
-name: remote ssh command
+name: Deploy
 on: [push]
 jobs:
 
   build:
-    name: Build
+    name: Pull and Build
     runs-on: ubuntu-latest
     steps:
-    - name: Test secrets
-      run: echo Secret Host ${{ secrets.SERVER_HOST }}
-
-    - name: executing remote ssh commands using password
+    - name: Pull and Build
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SERVER_HOST }}
