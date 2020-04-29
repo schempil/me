@@ -14,8 +14,8 @@ jobs:
     
     - name: Login
       run: |
-        ssh root@SERVER_HOST
-        SERVER_PW
+        ssh root@$SERVER_HOST
+        $SERVER_PW
         
     - name: Change directory
       run: cd /var/www/me
