@@ -24,9 +24,6 @@
           <SocialButton platform="instagram" url="https://www.instagram.com/swindle1995/" color="google"/>
 
           <hr/>
-
-          <img src="../assets/test.jpg" alt="demo-image" />
-
         </div>
       </div>
     </section>
