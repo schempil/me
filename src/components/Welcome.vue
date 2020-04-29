@@ -8,11 +8,12 @@
           </h1>
           <div class="subtitle">
             <vue-typed-js
-                    :strings="['Developer, fuck it', 'Developer, hell yeah!']"
+                    :strings="['Frontend Developer', 'Backend Developer', 'Full Stack Developer.']"
                     class="typed-center"
                     :smartBackspace="true"
                     :typeSpeed="50"
-                    :startDelay="750"
+                    :backDelay="1000"
+                    :startDelay="1000"
             >
               <h2 class="subtitle"><span class="typing"></span></h2>
             </vue-typed-js>
