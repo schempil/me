@@ -14,11 +14,8 @@ jobs:
     
     - name: Login
       run: |
-        ssh root@93.177.64.130
-        $SERVER_PW
-      env:
-        SERVER_HOST: SERVER_HOST
-        SERVER_PW: SERVER_PW
+        ssh root@${{ secrets.SERVER_HOST }}
+        ${{ secrets.SERVER_PW }}
         
     - name: Change directory
       run: cd /var/www/me
