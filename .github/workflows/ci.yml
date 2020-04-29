@@ -16,6 +16,9 @@ jobs:
       run: |
         ssh root@$SERVER_HOST
         $SERVER_PW
+      env:
+        SERVER_HOST: SERVER_HOST
+        SERVER_PW: SERVER_PW
         
     - name: Change directory
       run: cd /var/www/me
