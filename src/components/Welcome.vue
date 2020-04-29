@@ -8,7 +8,7 @@
           </h1>
           <div class="subtitle">
             <vue-typed-js
-                    :strings="['Developer, fuck it', 'Developer, hell Philipp I am!']"
+                    :strings="['Developer, fuck it', 'Developer, hell yeah!']"
                     class="typed-center"
                     :smartBackspace="true"
                     :typeSpeed="50"
