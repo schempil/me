@@ -14,7 +14,7 @@ jobs:
     
     - name: Login
       run: |
-        ssh root@$SERVER_HOST
+        ssh root@93.177.64.130
         $SERVER_PW
       env:
         SERVER_HOST: SERVER_HOST
