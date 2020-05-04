@@ -22,8 +22,6 @@
           <SocialButton platform="linkedin" url="https://www.linkedin.com/in/philippschemel/" />
           <SocialButton platform="github" url="https://github.com/schempil" />
           <SocialButton platform="instagram" url="https://www.instagram.com/swindle1995/" color="google"/>
-
-          <hr/>
         </div>
       </div>
     </section>
