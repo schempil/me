@@ -15,7 +15,7 @@
               <SocialButton platform="instagram" url="https://www.instagram.com/swindle1995/" />
             </div>
 
-            <button class="button is-outlined cv-download-button">Download CV</button>
+            <button class="button is-outlined cv-download-button" @click="cvDownload">Download CV</button>
           </div>
           <div class="column is-two-thirds is-fullheight right-main-column">
             <div class="intro-texts has-text-centered">
@@ -51,10 +51,11 @@ export default {
     props: {
       name: String
     },
-
-    mounted: function () {
-
-    }
+    methods: {
+      cvDownload: () => {
+        alert('Coming soon!')
+      }
+    },
   }
 </script>
 
