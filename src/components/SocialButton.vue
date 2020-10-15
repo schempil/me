@@ -16,5 +16,10 @@
 </script>
 
 <style>
-    a { margin-right: 4px; }
+    a {
+      margin-right: 4px;
+      background: transparent !important;
+      border: 0 !important;
+      color: #fff !important;
+    }
 </style>
