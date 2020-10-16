@@ -3,7 +3,7 @@ import App from './App.vue'
 import Buefy from 'buefy'
 import './assets/style.scss'
 import VueRouter from "vue-router";
-import Welcome from "./components/Welcome";
+import Welcome from "./views/Welcome";
 
 const routes = [
   { path: '/', component: Welcome, props: { name: 'Philipp Schemel' } }

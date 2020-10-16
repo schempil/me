@@ -5,14 +5,21 @@
 </template>
 
 <script>
-    export default {
-        name: 'SocialButton',
-        props: {
-            platform: String,
-            color: String,
-            url: String
-        }
-    }
+  import {Component, Prop, Vue} from 'vue-property-decorator';
+
+  @Component({
+    components: {}
+  })
+
+  class SocialButton extends Vue {
+
+    @Prop() name
+    @Prop() color
+    @Prop() url
+
+  }
+
+  export default SocialButton
 </script>
 
 <style>
