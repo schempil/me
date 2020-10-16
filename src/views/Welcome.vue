@@ -20,7 +20,7 @@
         <div class="column is-two-thirds is-fullheight right-main-column">
           <div class="intro-texts has-text-centered">
             <h1 class="title">
-              {{ name }}
+              Philipp Schemel
             </h1>
             <div class="subtitle-container">
               <vue-typed-js
@@ -41,28 +41,21 @@
   </div>
 </template>
 
-<script>
 
-import {Component, Prop, Vue} from 'vue-property-decorator';
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import SocialButton from "@/components/SocialButton.vue";
 import {VueTypedJs} from "vue-typed-js";
-import SocialButton from "../components/SocialButton"
 
 @Component({
-  components: {VueTypedJs, SocialButton}
+  components: {SocialButton, VueTypedJs}
 })
-
-class Welcome extends Vue {
-
-  @Prop() name
-
+export default class Welcome extends Vue {
   cvDownload() {
-    alert('Coming soon!')
+    alert('CV coming soon!')
   }
 
 }
-
-export default Welcome
-
 </script>
 
 <style scoped>
@@ -155,3 +148,4 @@ section {
   font-size: 1.4rem;
 }
 </style>
+
