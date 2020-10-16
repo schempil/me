@@ -42,21 +42,26 @@
 </template>
 
 <script>
-import {VueTypedJs} from "vue-typed-js";
-import SocialButton from "@/components/SocialButton";
 
-export default {
-    name: 'Welcome',
-    components: {SocialButton, VueTypedJs},
-    props: {
-      name: String
-    },
-    methods: {
-      cvDownload: () => {
-        alert('Coming soon!')
-      }
-    },
+import {Component, Prop, Vue} from 'vue-property-decorator';
+import {VueTypedJs} from "vue-typed-js";
+
+@Component({
+  components: {VueTypedJs}
+})
+
+class Welcome extends Vue {
+
+  @Prop() name
+
+  cvDownload() {
+    alert('Coming soon!')
   }
+
+}
+
+export default Welcome
+
 </script>
 
 <style scoped>
