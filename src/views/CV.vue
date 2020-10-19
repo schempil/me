@@ -1,7 +1,8 @@
 <template>
   <div class="cv-wrapper">
-    <span class="title">🏗</span>
-    <span class="subtitle">Under construction</span>
+    <span class="title">{{ getRandomConstructionEmoji() }}</span>
+    <span class="subtitle">Currently building...</span>
+    <router-link to="/"> ↪ Home</router-link>
   </div>
 </template>
 
@@ -16,13 +17,26 @@ export default class CV extends Vue {
 
   @Prop() private profile!: Profile;
 
+  constructionEmojis = [
+      "🪛", "🪚", "🔨", "🚧", "🧱", "🛠", "🔩", "🔧", "🏗", "🪓", "🦺"
+  ]
+
+  getRandomConstructionEmoji() {
+    const random = Math.floor(Math.random() * Math.floor(this.constructionEmojis.length - 1))
+    return this.constructionEmojis[random]
+  }
+
 }
 </script>
 
 <style scoped>
 
   .cv-wrapper {
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .title {
