@@ -1,22 +1,11 @@
 <template>
-  <div class="wrapper">
-    <section v-if="profile">
-      <div class="columns main-columns">
-        <div class="column is-one-third left-main-column">
-          <ProfileCard :profile="profile" />
-        </div>
-        <div class="column is-two-thirds is-fullheight right-main-column">
-          <div class="intro-texts has-text-centered">
-            <h1 class="title">
-              {{ profile.first_name }} {{ profile.last_name }}
-            </h1>
-            <div class="subtitle-container"   >
-              <TypeWriting :texts="[profile.title]" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="intro-texts has-text-centered">
+    <h1 class="title">
+      {{ profile.first_name }} {{ profile.last_name }}
+    </h1>
+    <div class="subtitle-container"   >
+      <TypeWriting :texts="[profile.title]" />
+    </div>
   </div>
 </template>
 
