@@ -1,7 +1,7 @@
 <template>
   <div class="cv-wrapper">
     <span class="title">{{ getRandomConstructionEmoji() }}</span>
-    <span class="subtitle">Currently building...</span>
+    <span class="subtitle">CV is in the making...</span>
     <router-link to="/"> ↪ Home</router-link>
   </div>
 </template>
