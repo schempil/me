@@ -28,7 +28,36 @@
         "username": "swindle1995"
       }
     ],
-    "work_experiences":[],
+    "work_experiences":[
+      {
+        "title": "Dual Student",
+        "start_date": "",
+        "end_date": "",
+        "employer": "LuK GmbH & Co. KG",
+        "description": "Lorem ipsum LuK",
+        "technologies": [
+          "Java", "JavaScript", "SAP ERP", "ABAP", "Fiori", "SAP UI5", "Data Visualization", "D3.js"
+        ]
+      },
+      {
+        "title": "Software Architect",
+        "start_date": "",
+        "end_date": "",
+        "employer": "SYNDIKAT7 GmbH",
+        "description": "Lorem ipsum SYNDIKAT7",
+        "technologies": [
+          "JavaScript", "TypeScript", "Microservices", "Containerization", "Docker", "ReactJS", "Angular", "Spring Boot",
+          "IBM LoopBack", "Electron", "CI / CD", "GitLab"
+        ]
+      },
+      {
+        "title": "Developer & UX Advocate",
+        "start_date": "",
+        "end_date": null,
+        "employer": "SAP SE",
+        "description": "Lorem ipsum SAP"
+      },
+    ],
     "educations": [],
     "skills": [],
     "hobbies": []
