@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>CV here 👋🏼</h1>
+    <span class="title">CV here 👋🏼</span>
   </div>
 </template>
 
@@ -19,6 +19,9 @@ export default class CV extends Vue {
 </script>
 
 <style scoped>
-
+  .title {
+    color: #333;
+    font-size: 4rem;
+  }
 </style>
 

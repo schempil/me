@@ -1,6 +1,6 @@
 <template>
   <div class="welcome-wrapper">
-    <div class="">
+    <div>
       <h1 class="title">
         {{ profile.first_name }} {{ profile.last_name }}
       </h1>
@@ -28,16 +28,16 @@ export default class Welcome extends Vue {
 
 <style scoped>
 
+  .title {
+    color: #333;
+    font-size: 4rem;
+  }
+
   .welcome-wrapper {
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: center;
-  }
-
-  .title {
-    color: #333 !important;
-    font-size: 4rem !important;
   }
 
   .subtitle-container {
