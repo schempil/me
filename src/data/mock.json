@@ -4,7 +4,16 @@
     "tag": "schemel",
     "first_name": "Philipp",
     "last_name": "Schemel",
+    "birth_date": "",
     "title": "Software Engineer",
+    "email": "philippschemel@live.com",
+    "phone": "+491739987047",
+    "address": {
+      "street": "Honaustr. 5",
+      "zip": "77815",
+      "city": "Bühl",
+      "country": "Germany"
+    },
     "socials": [
       {
         "type": "linkedin",
@@ -18,6 +27,84 @@
         "type": "instagram",
         "username": "swindle1995"
       }
+    ],
+    "work_experiences":[
+      {
+        "title": "Dual Student",
+        "start_date": "",
+        "end_date": "",
+        "employer": "LuK GmbH & Co. KG",
+        "description": "Lorem ipsum LuK",
+        "skills": [
+          "Java", "JavaScript", "SAP ERP", "ABAP", "Fiori", "SAP UI5", "Data Visualization", "D3.js"
+        ]
+      },
+      {
+        "title": "Software Architect",
+        "start_date": "",
+        "end_date": "",
+        "employer": "SYNDIKAT7 GmbH",
+        "description": "Lorem ipsum SYNDIKAT7",
+        "skills": [
+          "JavaScript", "TypeScript", "Microservices", "Containerization", "Docker", "ReactJS", "Angular", "Spring Boot",
+          "IBM LoopBack", "Electron", "CI / CD", "GitLab", "NoSQL", "MongoDB", "NeDB", "MySQL", "PhP", "Laravel"
+        ]
+      },
+      {
+        "title": "Developer & UX Advocate",
+        "start_date": "",
+        "end_date": null,
+        "employer": "SAP SE",
+        "description": "Lorem ipsum SAP",
+        "skills": [
+          ""
+        ]
+      }
+    ],
+    "educations": [
+      {
+        "qualification": "B.Sc. Applied Computer Science",
+        "grade": 1.7,
+        "start_date": "",
+        "end_date": "",
+        "institution": "Cooperative State University Karlsruhe",
+        "description": "Lorem Ipsum DHBW Karlsruhe"
+      },
+      {
+        "qualification": "A-levels",
+        "grade": 2.1,
+        "start_date": "",
+        "end_date": "",
+        "institution": "Technisches Gymnasium Bühl (Computer Science",
+        "description": "Lorem Ipsum TG Bühl"
+      }
+    ],
+    "skills": {
+      "technologies": [
+        {
+          "name": "TypeScript",
+          "level": 4
+        }
+      ],
+      "programming_languages": [
+        {
+          "name": "JavaScript",
+          "level": 4
+        }
+      ],
+      "languages": [
+        {
+          "name": "German",
+          "level": 5
+        },
+        {
+          "name": "English",
+          "level": 4
+        }
+      ]
+    },
+    "hobbies": [
+      "Snowboarding", "Cooking", "Mountainbiking"
     ]
   }
 }
