@@ -1,7 +1,16 @@
 <template>
   <div class="cv-wrapper">
-    <span class="title">{{ getRandomConstructionEmoji() }}</span>
-    <span class="subtitle">CV is in the making...</span>
+    <div class="title">{{ profile.first_name }}'s CV</div>
+    <div class="subtitle">Working Experience</div>
+    <div class="content">
+      <p v-for="workExperience in workExperiences" v-bind:key="workExperience.employer" >
+        {{ workExperience.title }} @{{ workExperience.employer }}<br/>
+        {{ workExperience.description }}<br/>
+        <span v-for="skill in workExperience.skills" v-bind:key="skill">
+          {{ skill }}
+        </span>
+      </p>
+    </div>
     <router-link to="/"> ↪ Home</router-link>
   </div>
 </template>
@@ -17,13 +26,12 @@ export default class CV extends Vue {
 
   @Prop() private profile!: Profile;
 
-  constructionEmojis = [
-      "🪛", "🪚", "🔨", "🚧", "🧱", "🛠", "🔩", "🔧", "🏗", "🪓", "🦺"
-  ]
+  workExperiences: WorkExperience[] = []
 
-  getRandomConstructionEmoji() {
-    const random = Math.floor(Math.random() * Math.floor(this.constructionEmojis.length - 1))
-    return this.constructionEmojis[random]
+  mounted() {
+    if (this.profile) {
+      this.workExperiences = this.profile.work_experiences
+    }
   }
 
 }
@@ -35,13 +43,23 @@ export default class CV extends Vue {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
-    align-items: center;
   }
 
   .title {
     color: #333;
-    font-size: 10rem;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+
+  .subtitle {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    color: #333;
+    font-size: 1.25rem;
   }
 </style>
 

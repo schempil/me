@@ -22,7 +22,7 @@
   import ProfileService from "@/services/profileService";
 
   @Component({
-    components: {ProfileCard, TypeWriting, SocialButton}
+    components: { ProfileCard, TypeWriting, SocialButton }
   })
   export default class App extends Vue {
 
@@ -66,6 +66,8 @@ section {
   border-radius: 30px;
   background: rgb(255, 255, 255);
   width: 67%;
+  padding: 50px;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 770px) {
