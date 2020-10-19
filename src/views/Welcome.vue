@@ -1,17 +1,17 @@
 <template>
   <div class="wrapper">
-    <section>
+    <section v-if="profile">
       <div class="columns main-columns">
         <div class="column is-one-third left-main-column">
-          <ProfileCard />
+          <ProfileCard :profile="profile" />
         </div>
         <div class="column is-two-thirds is-fullheight right-main-column">
           <div class="intro-texts has-text-centered">
             <h1 class="title">
-              Philipp Schemel
+              {{ profile.first_name }} {{ profile.last_name }}
             </h1>
-            <div class="subtitle-container">
-              <TypeWriting :texts="['Software Engineer']" />
+            <div class="subtitle-container"   >
+              <TypeWriting :texts="[profile.title]" />
             </div>
           </div>
         </div>
@@ -26,11 +26,19 @@ import {Component, Vue} from 'vue-property-decorator';
 import SocialButton from "@/components/SocialButton.vue";
 import TypeWriting from "@/components/TypeWriting.vue";
 import ProfileCard from "@/components/ProfileCard.vue";
+import ProfileService from "@/services/profileService";
 
 @Component({
   components: {ProfileCard, TypeWriting, SocialButton}
 })
 export default class Welcome extends Vue {
+
+  profile: Profile | null = null
+
+  async mounted() {
+    const profileService = new ProfileService()
+    this.profile = await profileService.getProfile()
+  }
 
 }
 </script>

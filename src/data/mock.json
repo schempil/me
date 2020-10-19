@@ -1,0 +1,23 @@
+{
+  "profile": {
+    "id": 1,
+    "tag": "schemel",
+    "first_name": "Philipp",
+    "last_name": "Schemel",
+    "title": "Software Engineer",
+    "socials": [
+      {
+        "type": "linkedin",
+        "username": "philippschemel"
+      },
+      {
+        "type": "github",
+        "username": "schempil"
+      },
+      {
+        "type": "instagram",
+        "username": "swindle1995"
+      }
+    ]
+  }
+}
