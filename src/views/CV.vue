@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <span class="title">CV here 👋🏼</span>
+  <div class="cv-wrapper">
+    <span class="title">🏗</span>
+    <span class="subtitle">Under construction</span>
   </div>
 </template>
 
@@ -19,9 +20,14 @@ export default class CV extends Vue {
 </script>
 
 <style scoped>
+
+  .cv-wrapper {
+
+  }
+
   .title {
     color: #333;
-    font-size: 4rem;
+    font-size: 10rem;
   }
 </style>
 

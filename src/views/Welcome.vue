@@ -7,7 +7,12 @@
       <div class="subtitle-container"   >
         <TypeWriting :texts="[profile.title]" />
       </div>
+      <hr/>
+      <a class="router-link">
+        <router-link to="/CV"> ↪ CV</router-link>
+      </a>
     </div>
+
   </div>
 </template>
 
@@ -31,6 +36,10 @@ export default class Welcome extends Vue {
   .title {
     color: #333;
     font-size: 4rem;
+  }
+
+  .router-link {
+    color: red;
   }
 
   .welcome-wrapper {

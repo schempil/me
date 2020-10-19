@@ -35,7 +35,7 @@ export default class SocialButtonList extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
 a {
   margin-right: 4px;
   background: transparent !important;
