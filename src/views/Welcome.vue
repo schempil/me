@@ -4,7 +4,7 @@
       <div class="columns main-columns">
         <div class="column is-one-third left-main-column">
           <figure class="image avatar">
-            <img class="is-rounded" src="https://avatars0.githubusercontent.com/u/7802273?s=460&u=476c61945c90dcd3232895b0c45c6b5eb1ba5bbe&v=4">
+            <img class="is-rounded" alt="Profile picture" src="https://avatars0.githubusercontent.com/u/7802273?s=460&u=476c61945c90dcd3232895b0c45c6b5eb1ba5bbe&v=4">
           </figure>
           <h1 class="side-title">Philipp Schemel</h1>
           <h2 class="side-subtitle">Software Engineer</h2>
@@ -23,16 +23,7 @@
               Philipp Schemel
             </h1>
             <div class="subtitle-container">
-              <vue-typed-js
-                  :strings="['Software Engineer']"
-                  class="typed-center"
-                  :smartBackspace="true"
-                  :typeSpeed="50"
-                  :backDelay="1000"
-                  :startDelay="1000"
-              >
-                <h2 class="subtitle"><span class="typing"></span></h2>
-              </vue-typed-js>
+              <TypeWriting :texts="['Software Engineer']" />
             </div>
           </div>
         </div>
@@ -43,12 +34,12 @@
 
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import {Component, Vue} from 'vue-property-decorator';
 import SocialButton from "@/components/SocialButton.vue";
-import {VueTypedJs} from "vue-typed-js";
+import TypeWriting from "@/components/TypeWriting.vue";
 
 @Component({
-  components: {SocialButton, VueTypedJs}
+  components: {TypeWriting, SocialButton}
 })
 export default class Welcome extends Vue {
   cvDownload() {
@@ -68,21 +59,6 @@ export default class Welcome extends Vue {
   height: 100vh;
   min-height: 640px;
   align-items: center;
-}
-
-@media screen and (max-width: 770px) {
-  .wrapper {
-    align-items: flex-start;
-    padding-top: 30px;
-  }
-
-  .intro-texts {
-    text-align: left !important;
-  }
-
-  .right-main-column {
-    display: none !important;
-  }
 }
 
 section {
@@ -144,9 +120,19 @@ section {
   margin-top: 5px;
 }
 
-.typing {
-  color: #333;
-  font-size: 1.4rem;
+@media screen and (max-width: 770px) {
+  .wrapper {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .intro-texts {
+    text-align: left !important;
+  }
+
+  .right-main-column {
+    display: none !important;
+  }
 }
 </style>
 
