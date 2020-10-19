@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <h1 class="title">
-      {{ profile.first_name }} {{ profile.last_name }}
-    </h1>
-    <div class="subtitle-container"   >
-      <TypeWriting :texts="[profile.title]" />
+  <div class="welcome-wrapper">
+    <div class="">
+      <h1 class="title">
+        {{ profile.first_name }} {{ profile.last_name }}
+      </h1>
+      <div class="subtitle-container"   >
+        <TypeWriting :texts="[profile.title]" />
+      </div>
     </div>
   </div>
 </template>
@@ -25,6 +27,14 @@ export default class Welcome extends Vue {
 </script>
 
 <style scoped>
+
+  .welcome-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
   .title {
     color: #333 !important;
     font-size: 4rem !important;

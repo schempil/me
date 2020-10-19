@@ -5,7 +5,7 @@
         <div class="column is-one-third">
           <ProfileCard :profile="profile" />
         </div>
-        <div class="column is-two-thirds is-fullheight right-main-column">
+        <div class="column is-two-thirds content-column">
           <router-view :profile="profile" />
         </div>
       </div>
@@ -15,25 +15,25 @@
 
 
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator';
-import SocialButton from "@/components/SocialButton.vue";
-import TypeWriting from "@/components/TypeWriting.vue";
-import ProfileCard from "@/components/ProfileCard.vue";
-import ProfileService from "@/services/profileService";
+  import {Component, Vue} from 'vue-property-decorator';
+  import SocialButton from "@/components/SocialButton.vue";
+  import TypeWriting from "@/components/TypeWriting.vue";
+  import ProfileCard from "@/components/ProfileCard.vue";
+  import ProfileService from "@/services/profileService";
 
-@Component({
-  components: {ProfileCard, TypeWriting, SocialButton}
-})
-export default class App extends Vue {
+  @Component({
+    components: {ProfileCard, TypeWriting, SocialButton}
+  })
+  export default class App extends Vue {
 
-  profile: Profile | null = null
+    profile: Profile | null = null
 
-  async mounted() {
-    const profileService = new ProfileService()
-    this.profile = await profileService.getProfile()
+    async mounted() {
+      const profileService = new ProfileService()
+      this.profile = await profileService.getProfile()
+    }
+
   }
-
-}
 </script>
 
 <style scoped>
@@ -62,12 +62,9 @@ section {
   min-height: 550px;
 }
 
-.right-main-column {
+.content-column {
   border-radius: 30px;
   background: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 67%;
 }
 
@@ -77,7 +74,7 @@ section {
     padding-top: 30px;
   }
 
-  .right-main-column {
+  .content-column {
     display: none !important;
   }
 }
