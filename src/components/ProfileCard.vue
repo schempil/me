@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="profile-card">
     <figure class="image avatar">
       <img class="is-rounded" alt="Profile picture" src="https://avatars0.githubusercontent.com/u/7802273?s=460&u=476c61945c90dcd3232895b0c45c6b5eb1ba5bbe&v=4">
     </figure>
@@ -29,7 +29,14 @@ export default class ProfileCard extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
+  .profile-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .side-title {
     font-size: 2rem; color: #fff
@@ -44,7 +51,8 @@ export default class ProfileCard extends Vue {
   }
 
   .avatar > img {
-    margin-bottom: 30px; width: 220px
+    margin-bottom: 30px;
+    width: 220px;
   }
 
   button.button:hover {
