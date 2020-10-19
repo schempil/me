@@ -6,7 +6,7 @@
           <ProfileCard :profile="profile" />
         </div>
         <div class="column is-two-thirds is-fullheight right-main-column">
-          <router-view />
+          <router-view :profile="profile" />
         </div>
       </div>
     </section>
@@ -71,23 +71,10 @@ section {
   width: 67%;
 }
 
-.title {
-  color: #333;
-  font-size: 4rem;
-}
-
-.subtitle-container {
-  margin-top: 5px;
-}
-
 @media screen and (max-width: 770px) {
   .wrapper {
     align-items: flex-start;
     padding-top: 30px;
-  }
-
-  .intro-texts {
-    text-align: left !important;
   }
 
   .right-main-column {
