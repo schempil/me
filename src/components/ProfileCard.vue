@@ -46,4 +46,15 @@ export default class ProfileCard extends Vue {
   .avatar > img {
     margin-bottom: 30px; width: 220px
   }
+
+  button.button:hover {
+    border-color: #fff;
+    color: #333;
+    background: #fff;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
 </style>

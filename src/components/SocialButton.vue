@@ -15,11 +15,22 @@ export default class SocialButton extends Vue {
 }
 </script>
 
-<style>
-a {
-  margin-right: 4px;
-  background: transparent !important;
-  border: 0 !important;
-  color: #fff !important;
-}
+<style scoped>
+  .button {
+    margin-right: 4px;
+    background: transparent !important;
+    border: 0 !important;
+    color: #fff !important;
+    border-bottom: 2px solid transparent !important;
+    border-radius: 0 !important;
+  }
+
+  .button:hover {
+    border-bottom: 2px solid #fff !important;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
 </style>
