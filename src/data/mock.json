@@ -34,7 +34,7 @@
         "start_date": "",
         "end_date": null,
         "employer": "SAP SE",
-        "description": "-",
+        "description": "Lorem ipsum dolorem meine arbeitserfahrung...",
         "skills": [
           "JavaScript", "NodeJS"
         ]
@@ -44,7 +44,7 @@
         "start_date": "",
         "end_date": "",
         "employer": "SYNDIKAT7 GmbH",
-        "description": "-",
+        "description": "Lorem ipsum dolorem meine arbeitserfahrung...",
         "skills": [
           "JavaScript", "TypeScript", "Microservices", "Containerization", "Docker", "ReactJS", "Angular", "Spring Boot",
           "IBM LoopBack", "Electron", "CI / CD", "GitLab", "NoSQL", "MongoDB", "NeDB", "MySQL", "PhP", "Laravel"
@@ -55,7 +55,7 @@
         "start_date": "",
         "end_date": "",
         "employer": "LuK GmbH & Co. KG",
-        "description": "-",
+        "description": "Lorem ipsum dolorem meine arbeitserfahrung...",
         "skills": [
           "Java", "JavaScript", "SAP ERP", "ABAP", "Fiori", "SAP UI5", "Data Visualization", "D3.js"
         ]

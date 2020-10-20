@@ -3,13 +3,26 @@
     <div class="title">{{ profile.first_name }}'s CV</div>
     <div class="subtitle">Working Experience</div>
     <div class="content">
-      <p v-for="workExperience in workExperiences" v-bind:key="workExperience.employer" >
-        {{ workExperience.title }} @{{ workExperience.employer }}<br/>
-        {{ workExperience.description }}<br/>
-        <span v-for="skill in workExperience.skills" v-bind:key="skill">
-          {{ skill }}
-        </span>
-      </p>
+      <div class="columns" v-for="workExperience in workExperiences" v-bind:key="workExperience.employer">
+        <div class="column is-half">
+          <div class="column is-one-third">
+            2008<br/>
+            @{{ workExperience.employer }}
+          </div>
+          <div class="column is-two-third">
+            {{ workExperience.title }}<br/>
+            <div class="tags">
+              <span class="tag is-primary" v-for="skill in workExperience.skills" v-bind:key="skill">
+                {{ skill }}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half">
+          {{ workExperience.description }}
+        </div>
+      </div>
+
     </div>
     <router-link to="/"> ↪ Home</router-link>
   </div>
@@ -53,8 +66,9 @@ export default class CV extends Vue {
 
   .subtitle {
     color: #333;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 10px;
+    font-weight: 600;
   }
 
   .content {
