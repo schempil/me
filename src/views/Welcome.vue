@@ -9,10 +9,9 @@
       </div>
       <hr/>
       <a class="router-link">
-        <router-link to="/CV"> ↪ CV</router-link>
+        <router-link to="/cv"> ↪ CV</router-link>
       </a>
     </div>
-
   </div>
 </template>
 

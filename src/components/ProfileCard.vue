@@ -47,7 +47,10 @@ export default class ProfileCard extends Vue {
   }
 
   .cv-download-button {
-    background: transparent; color: #fff; border: 2px solid #fff; border-radius: 100px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100px;
   }
 
   .avatar > img {
@@ -64,5 +67,18 @@ export default class ProfileCard extends Vue {
     -ms-transition: all 250ms ease-in;
     -o-transition: all 250ms ease-in;
     transition: all 250ms ease-in;
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait) {
+    .side-title {
+      font-size: 1.5rem;
+    }
+
+    .side-subtitle {
+      font-size: 1rem;
+    }
   }
 </style>

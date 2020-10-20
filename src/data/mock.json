@@ -30,34 +30,34 @@
     ],
     "work_experiences":[
       {
-        "title": "Dual Student",
-        "start_date": "",
-        "end_date": "",
-        "employer": "LuK GmbH & Co. KG",
-        "description": "Lorem ipsum LuK",
+        "title": "Developer & UX Advocate",
+        "start_date": "2020",
+        "end_date": null,
+        "employer": "SAP SE",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         "skills": [
-          "Java", "JavaScript", "SAP ERP", "ABAP", "Fiori", "SAP UI5", "Data Visualization", "D3.js"
+          "JavaScript", "NodeJS"
         ]
       },
       {
         "title": "Software Architect",
-        "start_date": "",
-        "end_date": "",
+        "start_date": "2017",
+        "end_date": "2019",
         "employer": "SYNDIKAT7 GmbH",
-        "description": "Lorem ipsum SYNDIKAT7",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         "skills": [
           "JavaScript", "TypeScript", "Microservices", "Containerization", "Docker", "ReactJS", "Angular", "Spring Boot",
           "IBM LoopBack", "Electron", "CI / CD", "GitLab", "NoSQL", "MongoDB", "NeDB", "MySQL", "PhP", "Laravel"
         ]
       },
       {
-        "title": "Developer & UX Advocate",
-        "start_date": "",
-        "end_date": null,
-        "employer": "SAP SE",
-        "description": "Lorem ipsum SAP",
+        "title": "Dual Student",
+        "start_date": "2013",
+        "end_date": "2016",
+        "employer": "LuK GmbH & Co. KG",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         "skills": [
-          ""
+          "Java", "JavaScript", "SAP ERP", "ABAP", "Fiori", "SAP UI5", "Data Visualization", "D3.js"
         ]
       }
     ],
