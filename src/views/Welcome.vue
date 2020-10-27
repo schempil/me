@@ -10,6 +10,9 @@
       <hr/>
       <a class="router-link">
         <router-link to="/cv"> ↪ CV</router-link>
+        <router-link to="/cv"> ↪ Skills</router-link>
+        <router-link to="/cv"> ↪ Work</router-link>
+        <router-link to="/cv"> ↪ Contact</router-link>
       </a>
     </div>
   </div>
