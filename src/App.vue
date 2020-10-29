@@ -61,7 +61,7 @@ section {
 .content-column {
   border-radius: 30px;
   background: rgb(255, 255, 255);
-  width: 67%;
+  width: 67% !important;
   padding: 50px;
   overflow-y: auto;
 }
