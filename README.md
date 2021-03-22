@@ -1,4 +1,4 @@
-# me2
+# https://schemel.me
 
 ## Project setup
 ```
