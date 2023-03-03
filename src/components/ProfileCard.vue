@@ -7,8 +7,6 @@
     <h2 class="side-subtitle">{{ profile.title }}</h2>
 
     <SocialButtonList :socials="profile.socials"/>
-
-    <button class="button is-outlined cv-download-button" @click="cvDownload">Download CV</button>
   </div>
 </template>
 
